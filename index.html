@@ -16,10 +16,9 @@
 <body>
   <div x-data="{ yamlFile: null }">
     <!-- Input field for OpenAPI YAML file -->
-    <input type="file" @change="loadYamlFile($event)" style=" text-align: center; margin: auto;">
-    <br>
+    <input type="file" @change="loadYamlFile($event)">
     <!-- Button to generate Swagger UI -->
-    <button @click="generateSwagger() style="margin: 0; position: absolute; top: 50%; -ms-transform: translateY(-50%); transform: translateY(-50%);">Generate Swagger</button>
+    <button @click="generateSwagger()">Generate Swagger</button>
     <!-- Container for Swagger UI -->
     <div id="swagger-ui" style="max-width: 800px; word-wrap: break-word; margin:auto"></div>
     <!-- Function to load OpenAPI YAML file -->
